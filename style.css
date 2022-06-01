@@ -1,0 +1,129 @@
+@import url(https://fonts.googleapis.com/css?family=Exo+2:200i);
+
+:root {
+    font-size: 10px;
+
+    --neon-text-color: rgb(255, 0, 255);
+    --neon-border-color: rgb(0, 87, 163);
+}
+
+body {
+    font-family: 'Exo 2', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.neon-sign {
+    font-size: 13rem;
+    margin-top: 0;
+    max-width: 80%;
+    font-weight: 600;
+    text-align: center;
+    white-space: wrap;
+    font-weight: 200;
+    font-style: italic;
+    color: #fff;
+    padding: 4rem 6rem 5.5rem;
+    border: 0.4rem solid #fff;
+    border-radius: 2rem;
+    text-transform: uppercase;
+}
+
+.flicker7 {
+    animation: flicker 7s infinite alternate;
+}
+
+.flicker10 {
+    animation: flicker 10s infinite alternate;
+}
+
+.neon-sign::-moz-selection {
+    background-color: var(--neon-border-color);
+    color: var(--neon-text-color);
+}
+
+.neon-sign::selection {
+    background-color: var(--neon-border-color);
+    color: var(--neon-text-color);
+}
+
+.neon-sign:focus {}
+
+img {
+    width: 100vw;
+    object-fit: contain;
+}
+
+/* Animate neon flicker */
+@keyframes flicker {
+
+    0%,
+    19%,
+    21%,
+    23%,
+    25%,
+    54%,
+    56%,
+    100% {
+
+        text-shadow:
+            -0.2rem -0.2rem 1rem #fff,
+            0.2rem 0.2rem 1rem #fff,
+            0 0 2rem var(--neon-text-color),
+            0 0 4rem var(--neon-text-color),
+            0 0 6rem var(--neon-text-color),
+            0 0 8rem var(--neon-text-color),
+            0 0 10rem var(--neon-text-color);
+
+        box-shadow:
+            0 0 .5rem #fff,
+            inset 0 0 .5rem #fff,
+            0 0 2rem var(--neon-border-color),
+            inset 0 0 2rem var(--neon-border-color),
+            0 0 4rem var(--neon-border-color),
+            inset 0 0 4rem var(--neon-border-color);
+    }
+
+    20%,
+    24%,
+    55% {
+        text-shadow: none;
+        box-shadow: none;
+    }
+}
+
+.countdown__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    min-height: 10rem;
+    margin: 2rem;
+}
+
+.countdown__container__part {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    margin: 0 2rem;
+}
+
+.countdown__container__part-top {
+    font-size: 2rem;
+}
+
+.countdown__container__part-bottom {
+    font-size: 6rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="image">
+            <img src="./images/lu.png" alt="RM2023 logo">
+        </div>
+        <h1 class="neon-sign flicker7">Coming soon...</h1>
+
+
+
+
+
+        <div class="countdown__container neon-sign flicker10">
+            <div class="countdown__container__part days">
+                <div class="countdown__container__part-top">Days</div>
+                <div class="countdown__container__part-bottom" id="days">{{ daysLeft }}</div>
+            </div>
+            <div class="countdown__container__part hours">
+                <div class="countdown__container__part-top">Hours</div>
+                <div class="countdown__container__part-bottom" id="hours">{{ hoursLeft }}</div>
+            </div>
+            <div class="countdown__container__part minutes">
+                <div class="countdown__container__part-top">Minutes</div>
+                <div class="countdown__container__part-bottom" id="minutes">{{ minutesLeft }}</div>
+            </div>
+            <div class="countdown__container__part seconds">
+                <div class="countdown__container__part-top">Seconds</div>
+                <div class="countdown__container__part-bottom" id="seconds">{{ secondsLeft }}</div>
+            </div>
+        </div>
+        
+    </body>
+    <script src="./script.js"></script>
+</html>
