@@ -195,17 +195,27 @@ h3 {
 @media (min-width:1045px) {
     html {
         font-size: .5rem;
-        color: limw;
-        background-color: redS;
     }
-.none   7
-background-color: LIMEIME;
-0
-    h1 {
-        font-size: 4rem;
-    }
+    
+
     h2 {
-        font-size: }
+        font-size: 2rem;
+    }
+
+    header {
+        position: absolute;
+        z-index: 2;
+    }
+
+    #coming-soon {
+        position: absolute;
+        left: 0;
+        align-self: flex-start;
+    }
+
+    #coming-soon {
+
+    }
 
     .caret {
         display: none;
