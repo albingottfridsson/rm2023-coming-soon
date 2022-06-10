@@ -10,7 +10,6 @@
 
   function init() {
     toDateTime = toDate.getTime();
-    console.log(toDate);
     
     getTimeLeft();
     setInterval(() => {

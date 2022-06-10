@@ -196,26 +196,27 @@ h3 {
     html {
         font-size: .5rem;
     }
-    
+
+    body {
+        width: 80%;
+        margin: 1rem auto;
+    }
 
     h2 {
         font-size: 2rem;
     }
-
-    header {
-        position: absolute;
-        z-index: 2;
+    
+    .other-shit {
+        display: flex;
+        flex-direction: row;
     }
 
     #coming-soon {
-        position: absolute;
-        left: 0;
-        align-self: flex-start;
+        font-size: 4rem;
+        height: fit-content;
     }
 
-    #coming-soon {
-
-    }
+    
 
     .caret {
         display: none;
