@@ -1,18 +1,21 @@
 @import url(https://fonts.googleapis.com/css?family=Exo+2:200i);
+@import url(https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&display=swap);
 
 html {
     font-size: 10px;
 
-    --neon-text-color: rgb(255, 0, 255);
-    --neon-border-color: rgb(0, 87, 163);
+    --neon-text-color: #ec5ee6;
+    --neon-text-color2: #3331b7;
+    --neon-border-color: #74f1fc;
+    --neon-border-color2: #5dd1fa;
 
     position: relative;
 }
 
 body {
-    font-family: 'Exo 2', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
     display: flex;
-    background: #000;
+    background: #1d1d1b;
     min-height: 100vh;
     flex-direction: column;
     /* justify-content: center; */
@@ -55,6 +58,10 @@ header {
     animation: flicker 10s infinite alternate;
 }
 
+.flicker8-secondary {
+    animation: flickersecondary 8s infinite alternate;
+}
+
 .neon-sign::-moz-selection {
     background-color: var(--neon-border-color);
     color: var(--neon-text-color);
@@ -63,6 +70,16 @@ header {
 .neon-sign::selection {
     background-color: var(--neon-border-color);
     color: var(--neon-text-color);
+}
+
+.neon-sign2::-moz-selection {
+    background-color: var(--neon-border-color2);
+    color: var(--neon-text-color2);
+}
+
+.neon-sign2::selection {
+    background-color: var(--neon-border-color2);
+    color: var(--neon-text-color2);
 }
 
 .neon-sign:focus {}
@@ -101,6 +118,43 @@ img {
             inset 0 0 2rem var(--neon-border-color),
             0 0 4rem var(--neon-border-color),
             inset 0 0 4rem var(--neon-border-color);
+    }
+
+    20%,
+    24%,
+    55% {
+        text-shadow: none;
+        box-shadow: none;
+    }
+}
+
+@keyframes flickersecondary {
+
+    0%,
+    19%,
+    21%,
+    23%,
+    25%,
+    54%,
+    56%,
+    100% {
+
+        text-shadow:
+            -0.2rem -0.2rem 1rem #fff,
+            0.2rem 0.2rem 1rem #fff,
+            0 0 2rem var(--neon-text-color2),
+            0 0 4rem var(--neon-text-color2),
+            0 0 6rem var(--neon-text-color2),
+            0 0 8rem var(--neon-text-color2),
+            0 0 10rem var(--neon-text-color2);
+
+        box-shadow:
+            0 0 .5rem #fff,
+            inset 0 0 .5rem #fff,
+            0 0 2rem var(--neon-border-color2),
+            inset 0 0 2rem var(--neon-border-color2),
+            0 0 4rem var(--neon-border-color2),
+            inset 0 0 4rem var(--neon-border-color2);
     }
 
     20%,
