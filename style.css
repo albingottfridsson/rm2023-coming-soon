@@ -225,7 +225,6 @@ img {
     justify-content: center;
     align-items: center;
     margin-top: 4rem;
-    margin-bottom: 8rem;
     min-width: 100%;
     min-height: 60vh;
 }
@@ -333,6 +332,10 @@ iframe {
 
     .caret {
         display: none;
+    }
+
+    .video-wrapper {
+        margin-bottom: 8rem;
     }
 }
 
