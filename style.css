@@ -469,6 +469,12 @@ h3 {
 
     .video-wrapper {
         margin-bottom: 8rem;
+        min-width: 100%;
+    }
+
+    video {
+        min-width: 100%;
+        max-width: 100%;
     }
 
     .logo {
