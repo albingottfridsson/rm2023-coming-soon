@@ -9,7 +9,94 @@ html {
     --neon-border-color: #74f1fc;
     --neon-border-color2: #5dd1fa;
 
+    --text-neon-pink: -0.1rem -0.1rem 0.25rem #fff,
+        0.1rem 0.1rem .25rem #fff,
+        0 0 .175rem var(--neon-text-color),
+        0 0 .325rem var(--neon-text-color),
+        0 0 .75rem var(--neon-text-color),
+        0 0 1.25rem var(--neon-text-color),
+        0 0 2.5rem var(--neon-text-color);
+
+    --text-neon-purple: -0.1rem -0.1rem 0.25rem #fff,
+        0.1rem 0.1rem .25rem #fff,
+        0 0 .175rem var(--neon-text-color2),
+        0 0 .325rem var(--neon-text-color2),
+        0 0 .75rem var(--neon-text-color2),
+        0 0 1.25rem var(--neon-text-color2),
+        0 0 2.5rem var(--neon-text-color2);
+
+    --text-neon-turk: -0.1rem -0.1rem 0.25rem #fff,
+        0.1rem 0.1rem .25rem #fff,
+        0 0 .175rem var(--neon-border-color),
+        0 0 .325rem var(--neon-border-color),
+        0 0 .75rem var(--neon-border-color),
+        0 0 1.25rem var(--neon-border-color),
+        0 0 2.5rem var(--neon-border-color);
+
+    --text-neon-blue: -0.1rem -0.1rem 0.25rem #fff,
+        0.1rem 0.1rem .25rem #fff,
+        0 0 .175rem var(--neon-border-color2),
+        0 0 .325rem var(--neon-border-color2),
+        0 0 .75rem var(--neon-border-color2),
+        0 0 1.25rem var(--neon-border-color2),
+        0 0 2.5rem var(--neon-border-color2);
+
+
+
+    --box-neon-turk: 0 0 .175rem #fff,
+        inset 0 0 .175rem #fff,
+        0 0 .5rem var(--neon-border-color2),
+        inset 0 0 .5rem var(--neon-border-color2),
+        0 0 1rem var(--neon-border-color2),
+        inset 0 0 1rem var(--neon-border-color2);
+
+    --box-neon-blue: 0 0 .175rem #fff,
+        inset 0 0 .175rem #fff,
+        0 0 .5rem var(--neon-border-color),
+        inset 0 0 .5rem var(--neon-border-color),
+        0 0 1rem var(--neon-border-color),
+        inset 0 0 1rem var(--neon-border-color);
+
+    --box-neon-pink: 0 0 .175rem #fff,
+        inset 0 0 .175rem #fff,
+        0 0 .5rem var(--neon-text-color),
+        inset 0 0 .5rem var(--neon-text-color),
+        0 0 1rem var(--neon-text-color),
+        inset 0 0 1rem var(--neon-text-color);
+
+    --box-neon-purple: 0 0 .175rem #fff,
+        inset 0 0 .175rem #fff,
+        0 0 .5rem var(--neon-text-color2),
+        inset 0 0 .5rem var(--neon-text-color2),
+        0 0 1rem var(--neon-text-color2),
+        inset 0 0 1rem var(--neon-text-color2);
+
     position: relative;
+}
+
+.neon-text--pink {
+    text-shadow: var(--text-neon-pink);
+}
+.neon-text--purple {
+    text-shadow: var(--text-neon-purple);
+}
+.neon-text--turk {
+    text-shadow: var(--text-neon-turk);
+}
+.neon-text--blue {
+    text-shadow: var(--text-neon-blue);
+}
+.neon-box--pink {
+    box-shadow: var(--box-neon-pink);
+}
+.neon-box--purple {
+    box-shadow: var(--box-neon-purple);
+}
+.neon-box--turk {
+    box-shadow: var(--box-neon-turk);
+}
+.neon-box--blue {
+    box-shadow: var(--box-neon-blue);
 }
 
 body {
@@ -23,6 +110,11 @@ body {
     overflow-x: hidden;
     overflow-y: auto;
     padding-top: 5rem;
+}
+
+.logo {
+    height: 100%;
+    width: 100%;
 }
 
 #video {
@@ -81,6 +173,49 @@ header {
     animation: flickersecondary 8s infinite alternate;
 }
 
+.flicker8-secondary {
+    animation: flickersecondary 8s infinite alternate;
+}
+
+.flicker-svg-pink {
+    animation: flicker-svg-pink 10s infinite alternate;
+}
+.flicker-svg-pink8 {
+    animation: flicker-svg-pink 8s infinite alternate;
+}
+.flicker-svg-pink12 {
+    animation: flicker-svg-pink 12s infinite alternate;
+}
+.flicker-svg-pink20 {
+    animation: flicker-svg-pink 20s infinite alternate;
+}
+.flicker-svg-pink-static {
+    filter: drop-shadow(3px 3px 2px var(--neon-text-color));
+}
+
+.flicker-svg-white {
+    animation: flicker-svg-white 9s infinite alternate;
+}
+.flicker-svg-white10 {
+    animation: flicker-svg-white 10s infinite alternate;
+}
+.flicker-svg-white9 {
+    animation: flicker-svg-white 9.5s infinite alternate;
+}
+.flicker-svg-white20 {
+    animation: flicker-svg-white 20s infinite alternate;
+}
+.flicker-svg-white-static {
+    filter: drop-shadow(3px 3px 2px #bdc2d7);
+}
+
+.flicker-svg-blue {
+    animation: flicker-svg-blue 12s infinite alternate;
+}
+.flicker-svg-blue-static {
+    filter: drop-shadow(3px 3px 2px var(--neon-border-color2));
+}
+
 .neon-sign::-moz-selection {
     background-color: var(--neon-border-color);
     color: var(--neon-text-color);
@@ -101,17 +236,16 @@ header {
     color: var(--neon-text-color2);
 }
 
-.neon-sign:focus {}
-
 img {
     width: 100%;
     height: 50vh;
     object-fit: contain;
 }
 
+
+
 /* Animate neon flicker */
 @keyframes flicker {
-
     0%,
     19%,
     21%,
@@ -120,25 +254,9 @@ img {
     54%,
     56%,
     100% {
-
-        text-shadow:
-            -0.1rem -0.1rem 0.25rem #fff,
-            0.1rem 0.1rem .25rem #fff,
-            0 0 .175rem var(--neon-text-color),
-            0 0 .325rem var(--neon-text-color),
-            0 0 .75rem var(--neon-text-color),
-            0 0 1.25rem var(--neon-text-color),
-            0 0 2.5rem var(--neon-text-color);
-
-        box-shadow:
-        0 0 .175rem #fff,
-        inset 0 0 .175rem #fff,
-        0 0 .5rem var(--neon-border-color),
-        inset 0 0 .5rem var(--neon-border-color),
-        0 0 1rem var(--neon-border-color),
-        inset 0 0 1rem var(--neon-border-color);
+        text-shadow: var(--text-neon-pink);
+        box-shadow: var(--box-neon-blue);
     }
-
     20%,
     24%,
     55% {
@@ -147,8 +265,7 @@ img {
     }
 }
 
-@keyframes flickersecondary {
-
+@keyframes flicker-svg-pink {
     0%,
     19%,
     21%,
@@ -157,25 +274,62 @@ img {
     54%,
     56%,
     100% {
-
-        text-shadow:
-            -0.1rem -0.1rem 0.25rem #fff,
-            0.1rem 0.1rem .25rem #fff,
-            0 0 .175rem var(--neon-text-color),
-            0 0 .325rem var(--neon-text-color),
-            0 0 .75rem var(--neon-text-color),
-            0 0 1.25rem var(--neon-text-color),
-            0 0 2.5rem var(--neon-text-color);
-
-        box-shadow:
-            0 0 .175rem #fff,
-            inset 0 0 .175rem #fff,
-            0 0 .5rem var(--neon-text-color),
-            inset 0 0 .5rem var(--neon-text-color),
-            0 0 1rem var(--neon-text-color),
-            inset 0 0 1rem var(--neon-text-color);
+        filter: drop-shadow( 3px 3px 2px var(--neon-text-color));
     }
+    20%,
+    24%,
+    55% {
+        filter: none;
+    }
+}
+@keyframes flicker-svg-white {
+    0%,
+    19%,
+    21%,
+    23%,
+    25%,
+    84%,
+    86%,
+    100% {
+        filter: drop-shadow( 3px 3px 2px #bdc2d7);
+    }
+    20%,
+    24%,
+    85% {
+        filter: none;
+    }
+}
 
+@keyframes flicker-svg-blue {
+    0%,
+    19%,
+    21%,
+    23%,
+    25%,
+    54%,
+    56%,
+    100% {
+        filter: drop-shadow( 3px 3px 2px var(--neon-border-color2));
+    }
+    20%,
+    24%,
+    55% {
+        filter: none;
+    }
+}
+
+@keyframes flickersecondary {
+    0%,
+    19%,
+    21%,
+    23%,
+    25%,
+    54%,
+    56%,
+    100% {
+        text-shadow: var(--text-neon-pink);
+        box-shadow: var(--text-neon-purple);
+    }
     20%,
     24%,
     55% {
@@ -259,14 +413,7 @@ h3 {
     margin-left: -5rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    text-shadow:
-            -0.2rem -0.2rem 1rem #fff,
-            0.2rem 0.2rem 1rem #fff,
-            0 0 2rem var(--neon-text-color),
-            0 0 4rem var(--neon-text-color),
-            0 0 6rem var(--neon-text-color),
-            0 0 8rem var(--neon-text-color),
-            0 0 10rem var(--neon-text-color);
+    text-shadow: var(--text-neon-pink)
 }
 
 .caret-up {
@@ -279,26 +426,13 @@ h3 {
     margin-left: 4rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    text-shadow:
-            -0.2rem -0.2rem 1rem #fff,
-            0.2rem 0.2rem 1rem #fff,
-            0 0 2rem var(--neon-text-color),
-            0 0 4rem var(--neon-text-color),
-            0 0 6rem var(--neon-text-color),
-            0 0 8rem var(--neon-text-color),
-            0 0 10rem var(--neon-text-color);
+    text-shadow: var(--text-neon-pink)
 }
 
 .d-none {
     display: none;
 }
 
-/* iframe {
-    max-width: 90vw !important;
-    min-height: 60vh;
-    width: 100% !important;
-    height: 100% !important;
-} */
 .turn-it-up {
     font-size: 6rem;
 }
@@ -335,6 +469,11 @@ h3 {
 
     .video-wrapper {
         margin-bottom: 8rem;
+    }
+
+    .logo {
+        height: 50%;
+        width: 50%;
     }
 }
 
