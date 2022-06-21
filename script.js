@@ -1,5 +1,5 @@
 
-  var toDate = new Date('2023-01-11 11:11');
+  var toDate = new Date(2023, 0, 11, 11, 11);
   var toDateTime = 999;
   var daysLeft = 999;
   var hoursLeft = 999;
