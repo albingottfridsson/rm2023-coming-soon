@@ -226,7 +226,6 @@ img {
     align-items: center;
     margin-top: 4rem;
     min-width: 100%;
-    min-height: 60vh;
 }
 .video-overlay {
     position: absolute;
@@ -294,12 +293,12 @@ h3 {
     display: none;
 }
 
-iframe {
+/* iframe {
     max-width: 90vw !important;
     min-height: 60vh;
     width: 100% !important;
     height: 100% !important;
-}
+} */
 .turn-it-up {
     font-size: 6rem;
 }
