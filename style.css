@@ -146,22 +146,6 @@ body {
     text-transform: uppercase;
 }
 
-.neon-sign2 {
-    font-size: 10rem;
-    margin-top: 0;
-    max-width: 80%;
-    font-weight: 600;
-    text-align: center;
-    white-space: wrap;
-    font-weight: 200;
-    font-style: italic;
-    color: #fff;
-    padding: 4rem 6rem;
-    border: 0.4rem solid #fff;
-    border-radius: 2rem;
-    text-transform: uppercase;
-}
-
 header {
     width: 100%;
     display: flex;
@@ -172,18 +156,13 @@ header {
 .flicker7 {
     animation: flicker 7s infinite alternate;
 }
-
 .flicker10 {
     animation: flicker 10s infinite alternate;
 }
-
 .flicker8-secondary {
     animation: flickersecondary 8s infinite alternate;
 }
 
-.flicker8-secondary {
-    animation: flickersecondary 8s infinite alternate;
-}
 
 .flicker-svg-pink {
     animation: flicker-svg-pink 10s infinite alternate;
@@ -191,31 +170,18 @@ header {
 .flicker-svg-pink8 {
     animation: flicker-svg-pink 8s infinite alternate;
 }
-.flicker-svg-pink12 {
-    animation: flicker-svg-pink 12s infinite alternate;
-}
-.flicker-svg-pink20 {
-    animation: flicker-svg-pink 20s infinite alternate;
-}
 .flicker-svg-pink-static {
     filter: drop-shadow(2px 2px 3px var(--neon-text-color));
 }
 
+
 .flicker-svg-white {
     animation: flicker-svg-white 9s infinite alternate;
-}
-.flicker-svg-white10 {
-    animation: flicker-svg-white 10s infinite alternate;
-}
-.flicker-svg-white9 {
-    animation: flicker-svg-white 9.5s infinite alternate;
-}
-.flicker-svg-white20 {
-    animation: flicker-svg-white 20s infinite alternate;
 }
 .flicker-svg-white-static {
     filter: drop-shadow(2px 2px 3px #bdc2d7);
 }
+
 
 .flicker-svg-blue {
     animation: flicker-svg-blue 12s infinite alternate;
@@ -224,25 +190,16 @@ header {
     filter: drop-shadow(2px 2px 3px var(--neon-border-color2));
 }
 
+
 .neon-sign::-moz-selection {
     background-color: var(--neon-border-color);
     color: var(--neon-text-color);
 }
-
 .neon-sign::selection {
     background-color: var(--neon-border-color);
     color: var(--neon-text-color);
 }
 
-.neon-sign2::-moz-selection {
-    background-color: var(--neon-border-color2);
-    color: var(--neon-text-color2);
-}
-
-.neon-sign2::selection {
-    background-color: var(--neon-border-color2);
-    color: var(--neon-text-color2);
-}
 
 img {
     width: 100%;
@@ -516,4 +473,66 @@ h3 {
     .countdown__container {
         transform: rotate(4deg) translateY(2rem);
     }
+}
+
+
+
+.cls-1,
+.cls-2 {
+    fill: #fff;
+}
+.cls-3 {
+    fill: #ff3ba8;
+}
+.cls-4 {
+    fill: #979ea0;
+}
+.cls-5 {
+    opacity: .2;
+}
+.cls-6 {
+    filter: url(#outer-glow-1);
+}
+.cls-2 {
+    font-family: BrushScriptMT, 'Brush Script MT';
+    font-size: 35px;
+}
+.cls-7 {
+    opacity: .3;
+}
+.cls-8 {
+    fill: #eaeaea;
+}
+.cls-9 {
+    fill: #ff78d2;
+}
+.cls-10 {
+    fill: #21e0ff;
+}
+.cls-11 {
+    opacity: .16;
+}
+.cls-12 {
+    fill: #00a2ff;
+}
+.cls-13 {
+    opacity: .12;
+}
+.cls-14 {
+    fill: #b6ffff;
+}
+.cls-15 {
+    fill: #c9ccce;
+}
+.cls-16 {
+    fill: #ff9fe1;
+}
+.cls-17 {
+    fill: #f2f3f3;
+}
+.cls-18 {
+    fill: #0d073e;
+}
+.cls-19 {
+    filter: url(#outer-glow-2);
 }
