@@ -98,6 +98,14 @@ html {
 .neon-box--blue {
     box-shadow: var(--box-neon-blue);
 }
+.neon-pink-shadow {
+    filter: drop-shadow( 3px 3px 5px var(--neon-text-color));
+}
+.neon-blue-shadow {
+    box-shadow: none;
+    text-shadow: none;
+    filter: drop-shadow( 3px 3px 5px var(--neon-border-color2));
+}
 
 body {
     font-family: 'Rajdhani', sans-serif;
@@ -190,7 +198,7 @@ header {
     animation: flicker-svg-pink 20s infinite alternate;
 }
 .flicker-svg-pink-static {
-    filter: drop-shadow(3px 3px 2px var(--neon-text-color));
+    filter: drop-shadow(2px 2px 3px var(--neon-text-color));
 }
 
 .flicker-svg-white {
@@ -206,14 +214,14 @@ header {
     animation: flicker-svg-white 20s infinite alternate;
 }
 .flicker-svg-white-static {
-    filter: drop-shadow(3px 3px 2px #bdc2d7);
+    filter: drop-shadow(2px 2px 3px #bdc2d7);
 }
 
 .flicker-svg-blue {
     animation: flicker-svg-blue 12s infinite alternate;
 }
 .flicker-svg-blue-static {
-    filter: drop-shadow(3px 3px 2px var(--neon-border-color2));
+    filter: drop-shadow(2px 2px 3px var(--neon-border-color2));
 }
 
 .neon-sign::-moz-selection {
@@ -274,7 +282,7 @@ img {
     54%,
     56%,
     100% {
-        filter: drop-shadow( 3px 3px 2px var(--neon-text-color));
+        filter: drop-shadow( 2px 2px 3px var(--neon-text-color));
     }
     20%,
     24%,
@@ -291,7 +299,7 @@ img {
     84%,
     86%,
     100% {
-        filter: drop-shadow( 3px 3px 2px #bdc2d7);
+        filter: drop-shadow( 2px 2px 3px #bdc2d7);
     }
     20%,
     24%,
@@ -309,7 +317,7 @@ img {
     54%,
     56%,
     100% {
-        filter: drop-shadow( 3px 3px 2px var(--neon-border-color2));
+        filter: drop-shadow( 2px 2px 3px var(--neon-border-color2));
     }
     20%,
     24%,
@@ -437,6 +445,13 @@ h3 {
     font-size: 6rem;
 }
 
+@media (orientation: landscape) {
+    .logo {
+        width: 30vw;
+    }
+}
+
+
 
 @media (min-width:1045px) {
     html {
@@ -479,7 +494,8 @@ h3 {
 
     .logo {
         height: 50%;
-        width: 50%;
+        width: 40%;
+        max-width: 40%;
     }
 }
 
@@ -490,7 +506,7 @@ h3 {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        width: 90%;
+        width: 95%;
     }
 
     #coming-soon {
