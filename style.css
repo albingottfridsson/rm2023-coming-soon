@@ -192,42 +192,22 @@ header {
 .flicker-svg-pink {
     animation: flicker-svg-pink 10s infinite alternate;
     -webkit-animation: flicker-svg-pink 10s infinite alternate;
-    /* -webkit-animation-name: flicker-svg-pink;
-    -webkit-animation-duration: 10s;
-    -webkit-animation-delay: 0.01s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-direction: alternate; */
 }
 .flicker-svg-pink8 {
     animation: flicker-svg-pink 8s infinite alternate;
     -webkit-animation: flicker-svg-pink 8s infinite alternate;
-    /* -webkit-animation-name: flicker-svg-pink;
-    -webkit-animation-duration: 8s;
-    -webkit-animation-delay: 0.01s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-direction: alternate; */
 }
 
 
 .flicker-svg-white {
     animation: flicker-svg-white 9s infinite alternate;
     -webkit-animation: flicker-svg-white 9s infinite alternate;
-    /* -webkit-animation-name: flicker-svg-white;
-    -webkit-animation-duration: 9s;
-    -webkit-animation-delay: 0.01s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-direction: alternate; */
 }
 
 
 .flicker-svg-blue {
     animation: flicker-svg-blue 12s infinite alternate;
     -webkit-animation: flicker-svg-blue 12s infinite alternate;
-    /* -webkit-animation-name: flicker-svg-blue;
-    -webkit-animation-duration: 12s;
-    -webkit-animation-delay: 0.01s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-direction: alternate; */
 }
 
 
