@@ -372,15 +372,6 @@ img {
     margin-top: 4rem;
     min-width: 100%;
 }
-.video-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background: radial-gradient(circle, rgba(60,0,199,1) 0%, rgba(0,212,255,1) 0%, rgba(239,0,255,1) 100%);
-    opacity: .5;
-}
 
 h1 {
     font-size: 8rem;
@@ -427,6 +418,51 @@ h3 {
 .turn-it-up {
     font-size: 6rem;
 }
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* background: radial-gradient(circle, rgba(60,0,199,1) 0%, rgba(0,212,255,1) 0%, rgba(239,0,255,1) 100%); */
+    background-color: black;
+    opacity: .5;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    z-index: 4;
+}
+
+.video-overlay__button {
+    color: white;
+    font-weight: bold;
+    margin: 1rem;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    background-color: var(--neon-text-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 4;
+    padding: 5%;
+}
+
+.video-overlay__button.sound > svg {
+    fill: white;
+    stroke: white;
+    padding: 1rem;
+}
+
+.video-overlay__button > .video {
+    fill: white;
+    stroke: white;
+    padding: 1rem;
+}
+
 
 @media (orientation: landscape) {
     .logo {
