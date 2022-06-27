@@ -100,12 +100,14 @@ html {
     box-shadow: var(--box-neon-blue);
 }
 .neon-pink-shadow {
-    filter: drop-shadow( 3px 3px 5px var(--neon-text-color));
+    filter: url(#pink-shadow);
+    -webkit-filter: url(#pink-shadow);
 }
 .neon-blue-shadow {
     box-shadow: none;
     text-shadow: none;
-    filter: drop-shadow( 3px 3px 5px var(--neon-border-color2));
+    filter: url(#blue-shadow);
+    -webkit-filter: url(#blue-shadow);
 }
 
 body {
@@ -153,20 +155,26 @@ header {
     border: 0.4rem solid #fff;
     border-radius: 2rem;
     text-transform: uppercase;
+    will-change: filter;
 }
+
 
 /* Base neon colors */
 .white {
-    filter: drop-shadow(2px 2px 3px #bdc2d7);
+    filter: url(#white-shadow);
+    -webkit-filter: url(#white-shadow);
 }
 .blue {
-    filter: drop-shadow(2px 2px 3px var(--neon-border-color2));
+    filter: url(#blue-shadow);
+    -webkit-filter: url(#blue-shadow);
 }
 .pink {
-    filter: drop-shadow(2px 2px 3px var(--neon-text-color));
+    filter: url(#pink-shadow);
+    -webkit-filter: url(#pink-shadow);
 }
 .turkquoise {
-    filter: drop-shadow(2px 2px 3px var(--neon-border-color));
+    filter: url(#turkquoise-shadow);
+    -webkit-filter: url(#turkquoise-shadow);
 }
 
 /* Add flicker animations */
@@ -187,24 +195,15 @@ header {
 .flicker-svg-pink8 {
     animation: flicker-svg-pink 8s infinite alternate;
 }
-.flicker-svg-pink-static {
-    filter: drop-shadow(2px 2px 3px var(--neon-text-color));
-}
 
 
 .flicker-svg-white {
     animation: flicker-svg-white 9s infinite alternate;
 }
-.flicker-svg-white-static {
-    filter: drop-shadow(2px 2px 3px #bdc2d7);
-}
 
 
 .flicker-svg-blue {
     animation: flicker-svg-blue 12s infinite alternate;
-}
-.flicker-svg-blue-static {
-    filter: drop-shadow(2px 2px 3px var(--neon-border-color2));
 }
 
 
@@ -256,12 +255,14 @@ img {
     54%,
     56%,
     100% {
-        filter: drop-shadow( 2px 2px 3px var(--neon-text-color));
+        filter: url(#pink-shadow);
+        -webkit-filter: url(#pink-shadow);
     }
     20%,
     24%,
     55% {
         filter: none;
+        -webkit-filter: none;
     }
 }
 @keyframes flicker-svg-white {
@@ -273,12 +274,14 @@ img {
     84%,
     86%,
     100% {
-        filter: drop-shadow( 2px 2px 3px #bdc2d7);
+        filter: url(#white-shadow);
+        -webkit-filter: url(#white-shadow);
     }
     20%,
     24%,
     85% {
         filter: none;
+        -webkit-filter: none;
     }
 }
 
@@ -291,12 +294,14 @@ img {
     54%,
     56%,
     100% {
-        filter: drop-shadow( 2px 2px 3px var(--neon-border-color2));
+        filter: url(#blue-shadow);
+        -webkit-filter: url(#blue-shadow);
     }
     20%,
     24%,
     55% {
         filter: none;
+        -webkit-filter: none;
     }
 }
 
