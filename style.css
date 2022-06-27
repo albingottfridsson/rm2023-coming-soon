@@ -420,11 +420,16 @@ h3 {
 }
 
 .video-overlay {
+    opacity: 0;
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
+    transition: all .2s ease-in-out;
+}
+
+.video-wrapper:hover > .video-overlay {
     /* background: radial-gradient(circle, rgba(60,0,199,1) 0%, rgba(0,212,255,1) 0%, rgba(239,0,255,1) 100%); */
     background-color: black;
     opacity: .5;
@@ -433,6 +438,7 @@ h3 {
     justify-content: center;
     align-items: center;
     z-index: 4;
+    border-radius: .5rem;
 }
 
 .video-overlay__button {
@@ -449,6 +455,11 @@ h3 {
     align-items: center;
     z-index: 4;
     padding: 5%;
+    cursor: pointer;
+}
+
+.video-overlay__button:hover {
+    transform: scale(1.1);
 }
 
 .video-overlay__button.sound > svg {
